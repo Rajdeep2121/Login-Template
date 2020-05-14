@@ -7,6 +7,4 @@ It has all the formatting done using Bootstrap CDN.
 <br>
 <br>
 <br>
-<p align="center">
-    <img src="Screenshot/Screenshot (204).png" width="50%">
-</p>
+<img src="Screenshot/Screenshot (204).png" width="50%">
