@@ -2,7 +2,28 @@
 session_start();
 // header('location:login.php');
 $con = mysqli_connect('localhost','root','');
+
+// create db if it doesnt exist
+$createdb = "create database userregistration";
+if($con->query($createdb) === TRUE){
+    echo "";
+}
+else{
+    echo "";
+}
+
 mysqli_select_db($con,'userregistration');
+
+// create table if it doesnt exist
+$create = "create table table2(name varchar(255),password varchar(255),age int,post varchar(255),salary int,email varchar(255), PRIMARY KEY(email))";
+if(mysqli_query($con, $create)){
+    echo "";
+}
+else{
+    echo "";
+}
+
+
 $email = $_POST['email'];
 $pass = $_POST['password'];
 $name = $_POST['name'];
