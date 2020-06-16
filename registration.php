@@ -1,7 +1,9 @@
 <?php
 session_start();
 // header('location:login.php');
-$con = mysqli_connect('localhost','root','');
+$con = mysqli_connect('postgres://bujdqnykpoacpa:69e98c3b8e683e0890cb73d939ecaafdfda1a10c21a5dc2de832b91287f7e833@ec2-34-197-141-7.compute-1.amazonaws.com:5432/db8iem6qdutl20
+','bujdqnykpoacpa','69e98c3b8e683e0890cb73d939ecaafdfda1a10c21a5dc2de832b91287f7e833
+','db8iem6qdutl20','69e98c3b8e683e0890cb73d939ecaafdfda1a10c21a5dc2de832b91287f7e833');
 
 // create db if it doesnt exist
 $createdb = "create database userregistration";
